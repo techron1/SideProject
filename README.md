@@ -18,7 +18,7 @@ A CICD flow
 		So report can be viewed in UI
 		http://localhost:8080/
 	6 .Install and define jdk
-	7. JAVA_HOME must be defined in environment variales. JMETER_HOME,ANT_HOME  is optional
+	7. JAVA_HOME must be defined in environment variales. JMETER_HOME,ANT_HOME  is optional if properly setup.
 
 
 # Update the configuration file and run setup.sh
@@ -26,9 +26,14 @@ A CICD flow
 
 Files Description: 
 	1. build.xml: A ant xml task driving the jmeter run
+	
 	2. Project.jmx: A jmeter script with test cases
+	
 	3. config.xml: A jenkins parameterized config file
+	
 	4. jmeterstyle.xml: A jmeter style sheet that will generate report in the script dir
+	
 	5. deploy.sh: A shell script that copy the current project files once above step(1) is done
 
 After tools are installed and jenkins is setup plz run deploy.sh and reload configuration from disk.
+
